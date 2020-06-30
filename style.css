@@ -1,0 +1,26 @@
+/* 
+- Mobile: 375px
+*/
+
+/* Weights: 400, 700 */
+
+* {
+    box-sizing: border-box;
+}
+
+/* Variables */
+:root {
+    --cyan:  hsl(179, 62%, 43%);
+    --bright-yellow: hsl(71, 73%, 54%);
+    --light-grey: hsl(204, 43%, 93%);
+    --greyish-blue: hsl(218, 22%, 67%);
+}
+
+
+/* General Styles */
+
+html {
+    max-width: 1440px;
+    font-family:  'Karla', sans-serif; 
+    font-size: 16px;
+}
