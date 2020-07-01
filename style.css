@@ -6,6 +6,8 @@
 
 * {
     box-sizing: border-box;
+    margin: 0;
+    padding: 0;
 }
 
 /* Variables */
@@ -20,7 +22,129 @@
 /* General Styles */
 
 html {
-    max-width: 1440px;
     font-family:  'Karla', sans-serif; 
     font-size: 16px;
+    background: hsl(0, 0%, 94%);
+}
+
+body{
+    height: 100%;
+    max-width: 1440px;
+    margin: 0 auto;
+}
+
+h1 {
+    font-size: 1.45rem;
+}
+
+h2 {
+    font-size: 1.1rem;
+}
+
+/* Grid Wrapper */
+
+main{
+    max-width: 45%;
+    margin: 100px auto;
+    border-radius: 10px;
+    background: white;
+    box-shadow: -0.5px -0.5px 5px 1px rgba(0,0,0,0.2);
+
+    
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-template-areas: 
+    "top-view top-view"
+    "left-view right-view";
+
+}
+
+main div {
+    padding: 35px;
+}
+
+/* Grid Items */
+
+/* Top View */
+#top-view{
+    grid-area: top-view;
+}
+
+#top-view h1{
+    color: var(--cyan);
+    margin-bottom: 4vh;
+    
+}
+
+#top-view h2{
+    color: var(--bright-yellow);
+    margin-bottom: 2vh;
+}
+
+#top-view p{
+    color: var(--greyish-blue);
+    margin-bottom: 1vh;
+}
+
+/* Left View */
+
+#left-view{
+    background: var(--cyan);
+    grid-area: left-view;
+    border-bottom-left-radius: 10px;
+    color: #fff;
+}
+
+#left-view h2{
+    margin-bottom: 3vh;
+}
+
+#left-view span {
+    font-size: 2rem;
+    font-weight: 700;
+    padding-right: .8vw;
+}
+
+#left-view #per-month{
+    display: inline-block;
+    font-size: 1em;
+    font-weight: 400;
+    color: rgba(255, 255, 255, 0.5);
+    
+}
+
+#left-view p{
+    margin-bottom: 2vh;
+}
+
+#left-view button{
+    margin-top: 3vh;
+    width: 100%;
+    padding: 15px;
+    border-radius: 5px;
+    border: none;
+    background: var(--bright-yellow);
+    color: #fff;
+    font-weight: 700;
+}
+
+
+/* Right View */
+
+#right-view{
+    background: hsl(179, 47%, 52%);
+    grid-area: right-view;
+    border-bottom-right-radius: 10px;
+    color: #fff;
+}
+
+#right-view ul{
+    margin-top: 3vh;
+    list-style: none;
+    color: rgba(255, 255, 255, 0.5);
+}
+
+#right-view li{
+    padding-top: 2px;   
 }
