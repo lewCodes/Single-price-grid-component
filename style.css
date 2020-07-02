@@ -48,7 +48,6 @@ main{
     
     display: grid;
     grid-template-columns: 1fr 1fr;
-    grid-template-rows: 50% 1fr;
     grid-template-areas: 
     "top-view top-view"
     "left-view right-view";
@@ -170,7 +169,6 @@ footer{
         width: 375px;
         margin: 100px auto 10px auto;
         grid-template-columns: 1fr;
-        grid-template-rows: 1fr 80% 90%;
         grid-template-areas: 
         "top-view"
         "left-view"
